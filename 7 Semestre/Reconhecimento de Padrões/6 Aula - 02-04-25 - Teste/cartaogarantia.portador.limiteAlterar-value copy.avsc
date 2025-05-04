@@ -1,0 +1,20 @@
+{
+    "type": "record",
+    "name": "LimiteAlterar",
+    "namespace": "br.com.jazztech.cartaogarantia",
+    "doc": "Alterar o limite da garantia",
+    "fields": [
+        {
+            "name": "limiteAdicional",
+            "type": "string"
+        },
+        {
+            "name": "accountKey",
+            "type": {
+                "type": "string",
+                "logicalType": "UUID"
+            },
+            "doc": "chave de conta do cliente"
+        }
+    ]
+}

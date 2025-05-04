@@ -1,0 +1,42 @@
+{
+	"type": "record",
+	"name": "RedeemPosition",
+	"namespace": "br.com.jazztech.arbi-adapter",
+	"doc": "Evento de resgate da posição",
+    "fields": [
+        {
+            "name": "Client",
+            "type": {
+                "type": "record",
+                "name": "Client",
+                "fields": [
+                    {
+                        "name": "Name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "TaxPayerRegistry",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Account",
+                        "type": {
+                            "type": "record",
+                            "name": "Account",
+                            "fields": [
+                                {
+                                    "name": "Id",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Status",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
